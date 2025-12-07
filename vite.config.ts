@@ -5,7 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/CBN-landing-page/",
+  // Only use base path in production (for GitHub Pages)
+  base: mode === "production" ? "/CBN-landing-page/" : "/",
   server: {
     host: "::",
     port: 8080,
