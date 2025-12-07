@@ -5,12 +5,9 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
-  // Always use root path by default (for Vercel, local dev, etc.)
-  // Only use base path when explicitly building for GitHub Pages
-  const base = process.env.GITHUB_PAGES === "true" ? "/CBN-landing-page/" : "/";
-  
+  // Always use root path for Vercel deployment
   return {
-    base,
+    base: "/",
     server: {
       host: "::",
       port: 8080,
