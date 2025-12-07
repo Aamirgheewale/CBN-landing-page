@@ -1,73 +1,162 @@
-# Welcome to your Lovable project
+🌐 Codebase Navigator AI — Landing Page
 
-## Project info
+A high-performance marketing site showcasing the intelligence and capabilities of Codebase Navigator AI.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+🚀 Overview
 
-## How can I edit this code?
+This repository contains the official landing page for Codebase Navigator AI — an AI-powered system designed to help developers understand complex codebases in seconds. The landing page introduces the product’s vision, core features, architecture, and provides a direct path to the interactive demo.
 
-There are several ways of editing your application.
+The site is fully responsive, visually modern, and optimized to communicate the value of the product to developers, teams, and enterprise users.
 
-**Use Lovable**
+🧠 What is Codebase Navigator AI?
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Codebase Navigator AI is a next-generation code-intelligence assistant that deeply analyzes entire repositories.
+Unlike autocomplete tools, it focuses on true understanding, using advanced RAG (Retrieval Augmented Generation), AST-based chunking, and multi-model reasoning.
 
-Changes made via Lovable will be committed automatically to this repo.
+The system can:
 
-**Use your preferred IDE**
+Explain architecture and system behavior
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Map dependencies and relationships
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Generate documentation
 
-Follow these steps:
+Answer natural-language technical questions
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Support onboarding, debugging, refactoring, and legacy modernization
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+This landing page explains the product and links users to the live demo hosted separately.
 
-# Step 3: Install the necessary dependencies.
-npm i
+🎯 Purpose of This Landing Page
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+The goal of this site is to:
 
-**Edit a file directly in GitHub**
+Present the product clearly and attractively
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Position Codebase Navigator AI as a deep code-understanding platform
 
-**Use GitHub Codespaces**
+Explain how the underlying RAG pipeline works
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Highlight key features and benefits
 
-## What technologies are used for this project?
+Provide a clear call-to-action to try the demo
 
-This project is built with:
+Serve as the main public-facing page for the project
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+🖼 Key Sections on the Page
+1. Hero Section
 
-## How can I deploy this project?
+A bold statement introducing Codebase Navigator AI, with a “Try Demo” button that redirects users to the deployed demo application.
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+2. Features Overview
 
-## Can I connect a custom domain to my Lovable project?
+Showcases the core capabilities:
 
-Yes, you can!
+Deep code understanding
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+AST-powered RAG pipeline
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Dependency graphing
+
+Auto-documentation
+
+Natural-language querying
+
+3. RAG Pipeline Diagram
+
+A dedicated section titled “How Codebase Navigator AI Thinks” featuring the system’s RAG architecture, explaining the internal flow:
+Retriever → Ranker → Context Builder → LLM → Final Answer.
+
+4. Demo Access
+
+A teaser section that invites users to explore the live demo hosted on Vercel.
+
+5. Pricing Preview
+
+Simple, transparent pricing tiers for individuals, teams, and enterprises.
+
+6. Footer
+
+Minimal, modern footer including project links and basic credits.
+
+🛠 Tech Stack (Landing Page)
+
+Frontend: React / Next.js / Vite (depending on generation output)
+
+Hosting: GitHub Pages
+
+Styling: TailwindCSS / CSS modules
+
+Assets: RAG diagram, feature icons, illustrations
+
+Routing: Client-side navigation for smooth transitions
+
+This repo does not contain backend or AI logic — it is purely a UI marketing layer.
+
+🔗 Demo Application
+
+The interactive demo of Codebase Navigator AI is hosted separately on Vercel.
+
+Demo URL:
+https://codebasenavigator.vercel.app/
+
+The CTA buttons on the landing page redirect users to this demo.
+
+🔐 Security Note
+
+This landing page does not contain any backend logic, API keys, or model calls.
+All AI-powered features live in the demo repository, which uses:
+
+Secure serverless functions
+
+Environment variables
+
+Protected Gemini API key usage
+
+This separation ensures clean organization and safe deployment.
+
+🧩 Repository Structure
+landing-page/
+│
+├── public/                // images, RAG diagram, assets
+├── src/
+│   ├── components/        // UI components
+│   ├── sections/          // page sections (Hero, Features, etc.)
+│   ├── App.jsx / index.js // main entry
+│   └── styles/            // global or module CSS
+│
+├── README.md              // this file
+└── package.json
+
+🚀 Deployment
+
+This landing page is deployed via GitHub Pages.
+
+Basic steps:
+
+Build the project:
+
+npm run build
+
+
+Push build output to gh-pages branch (or using your framework’s auto-deploy setup).
+
+GitHub Pages serves the static site automatically.
+
+The “Try Demo” button links to the external Vercel deployment.
+
+🤝 Contributing
+
+Open to UI improvements, animations, layout refinements, or accessibility enhancements.
+Since this is a public marketing page, please avoid adding backend logic or sensitive information.
+
+📬 Contact
+
+For collaboration, questions, or feature suggestions:
+
+GitHub Issues
+
+Email: aamirgheewale142210@gmail.com
+
+LinkedIn: www.linkedin.com/in/aamirgheewale
+

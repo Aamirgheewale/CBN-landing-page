@@ -5,7 +5,7 @@ import { Check } from "lucide-react";
 const pricingPlans = [
   {
     name: "Free",
-    price: "$0",
+    price: "₹0",
     period: "forever",
     description: "Perfect for exploring small personal projects.",
     features: [
@@ -19,7 +19,7 @@ const pricingPlans = [
   },
   {
     name: "Pro",
-    price: "$29",
+    price: "₹499",
     period: "/month",
     description: "For professional developers and small teams.",
     features: [

@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Play, Sparkles } from "lucide-react";
@@ -43,10 +42,10 @@ const DemoSection = () => {
               </ul>
 
               <Button asChild variant="hero" size="lg">
-                <Link to="/demo">
+                <a href="https://codebasenavigator.vercel.app/" target="_blank" rel="noopener noreferrer">
                   <Play className="w-5 h-5 mr-2" />
                   Launch Demo
-                </Link>
+                </a>
               </Button>
             </div>
 
@@ -81,14 +80,16 @@ const DemoSection = () => {
               </div>
 
               {/* Play Button Overlay */}
-              <Link 
-                to="/demo"
+              <a 
+                href="https://codebasenavigator.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="absolute inset-0 flex items-center justify-center bg-background/20 opacity-0 hover:opacity-100 transition-opacity group"
               >
                 <div className="w-20 h-20 rounded-full bg-primary/90 flex items-center justify-center shadow-lg shadow-primary/50 group-hover:scale-110 transition-transform">
                   <Play className="w-8 h-8 text-primary-foreground ml-1" />
                 </div>
-              </Link>
+              </a>
             </Card>
           </div>
         </div>

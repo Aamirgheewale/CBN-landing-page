@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Brain, ArrowRight } from "lucide-react";
 import heroBg from "@/assets/hero-bg.png";
@@ -47,10 +46,10 @@ const HeroSection = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: "0.3s" }}>
             <Button asChild variant="hero" size="lg">
-              <Link to="/demo">
+              <a href="https://codebasenavigator.vercel.app/" target="_blank" rel="noopener noreferrer">
                 Try the Demo
                 <ArrowRight className="ml-2 w-5 h-5" />
-              </Link>
+              </a>
             </Button>
             <Button asChild variant="hero-outline" size="lg">
               <a href="#features">
